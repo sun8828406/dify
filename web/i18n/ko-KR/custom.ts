@@ -6,8 +6,8 @@ const translation = {
   },
   webapp: {
     title: 'WebApp 브랜드 사용자 정의',
-    removeBrand: 'Powered by Dify 삭제',
-    changeLogo: 'Powered by 브랜드 이미지 변경',
+    removeBrand: ' Suntray 삭제',
+    changeLogo: ' 브랜드 이미지 변경',
     changeLogoTip: '최소 크기 40x40px의 SVG 또는 PNG 형식',
   },
   app: {

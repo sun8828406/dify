@@ -6,8 +6,8 @@ const translation = {
   },
   webapp: {
     title: 'Personalizar marca de WebApp',
-    removeBrand: 'Eliminar Powered by Dify',
-    changeLogo: 'Cambiar Imagen de Marca Powered by',
+    removeBrand: 'Eliminar  Suntray',
+    changeLogo: 'Cambiar Imagen de Marca ',
     changeLogoTip: 'Formato SVG o PNG con un tamaño mínimo de 40x40px',
   },
   app: {

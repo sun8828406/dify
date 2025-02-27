@@ -6,8 +6,8 @@ const translation = {
   },
   webapp: {
     title: 'WebApp markasını özelleştir',
-    removeBrand: 'Powered by Dify\'i kaldır',
-    changeLogo: 'Powered by Brand Resmini Değiştir',
+    removeBrand: ' Suntray\'i kaldır',
+    changeLogo: ' Brand Resmini Değiştir',
     changeLogoTip: 'SVG veya PNG formatında, en az 40x40px boyutunda',
   },
   app: {

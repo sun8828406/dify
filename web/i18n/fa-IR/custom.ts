@@ -6,8 +6,8 @@ const translation = {
   },
   webapp: {
     title: 'سفارشی سازی برند وب اپ',
-    removeBrand: 'حذف "Powered by Dify"',
-    changeLogo: 'تغییر تصویر برند "Powered by"',
+    removeBrand: 'حذف " Suntray"',
+    changeLogo: 'تغییر تصویر برند ""',
     changeLogoTip: 'فرمت SVG یا PNG با حداقل اندازه 40x40px',
   },
   app: {
