@@ -177,7 +177,7 @@ const translation = {
     empower: 'Zwiększ możliwości rozwoju sztucznej inteligencji',
     viewMore: 'Zobacz więcej',
     and: 'i',
-    difyMarketplace: 'Rynek Dify',
+    difyMarketplace: 'Rynek Suntray',
     noPluginFound: 'Nie znaleziono wtyczki',
     pluginsResult: '{{num}} wyniki',
   },

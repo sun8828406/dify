@@ -96,7 +96,7 @@ const translation = {
       title: '{{count,number}} Annotation Quota Limits',
       tooltip: 'Manual editing and annotation of responses provides customizable high-quality question-answering abilities for apps. (Applicable only in Chat apps)',
     },
-    ragAPIRequestTooltip: 'Refers to the number of API calls invoking only the knowledge base processing capabilities of Dify.',
+    ragAPIRequestTooltip: 'Refers to the number of API calls invoking only the knowledge base processing capabilities of Suntray.',
     receiptInfo: 'Only team owner and team admin can subscribe and view billing information',
   },
   plans: {
@@ -125,7 +125,7 @@ const translation = {
       features: [
         'All Core Features Released Under the Public Repository',
         'Single Workspace',
-        'Complies with Dify Open Source License',
+        'Complies with Suntray Open Source License',
       ],
     },
     premium: {
@@ -158,9 +158,9 @@ const translation = {
         'Exclusive Enterprise Features',
         'Multiple Workspaces & Enterprise Management',
         'SSO',
-        'Negotiated SLAs by Dify Partners',
+        'Negotiated SLAs by Suntray Partners',
         'Advanced Security & Controls',
-        'Updates and Maintenance by Dify Officially',
+        'Updates and Maintenance by Suntray Officially',
         'Professional Technical Support',
       ],
     },

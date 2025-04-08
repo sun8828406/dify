@@ -95,7 +95,7 @@ const translation = {
       title: '{{count,number}}の注釈クォータ制限',
       tooltip: '手動での回答の編集と注釈により、カスタマイズ可能な高品質の質問応答機能をアプリに提供します。（チャットアプリのみに適用）',
     },
-    ragAPIRequestTooltip: 'Difyのナレッジベース処理機能のみを呼び出すAPI呼び出しの数を指します。',
+    ragAPIRequestTooltip: 'Suntrayのナレッジベース処理機能のみを呼び出すAPI呼び出しの数を指します。',
     receiptInfo: 'チームオーナーとチーム管理者のみが購読および請求情報を表示できます',
   },
   plans: {
@@ -124,7 +124,7 @@ const translation = {
       features: [
         'パブリックリポジトリの全コア機能',
         'シングルワークスペース',
-        'Difyオープンソースライセンス準拠',
+        'Suntrayオープンソースライセンス準拠',
       ],
     },
     premium: {
@@ -157,7 +157,7 @@ const translation = {
         '企業専用機能',
         'マルチワークスペース管理',
         'シングルサインオン（SSO）',
-        'DifyパートナーによるSLA保証',
+        'SuntrayパートナーによるSLA保証',
         '高度なセキュリティ管理',
         '公式メンテナンス＆アップデート',
         'プロフェッショナル技術支援',

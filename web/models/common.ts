@@ -96,6 +96,7 @@ export type Provider = {
   [Name in ProviderName]: {
     provider_name: Name
   } & {
+    // provider_type: 'custom' | 'system'
     provider_type: 'custom' | 'system'
     is_valid: boolean
     is_enabled: boolean

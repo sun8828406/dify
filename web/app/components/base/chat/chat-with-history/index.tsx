@@ -45,12 +45,8 @@ const ChatWithHistory: FC<ChatWithHistoryProps> = ({
 
   useEffect(() => {
     themeBuilder?.buildTheme(site?.chat_color_theme, site?.chat_color_theme_inverted)
-    if (site) {
-      if (customConfig)
-        document.title = `${site.title}`
-      else
-        document.title = `${site.title} - Powered by Dify`
-    }
+    if (site)
+      document.title = `${site.title} - Powered by Suntray`
   }, [site, customConfig, themeBuilder])
 
   if (appInfoLoading) {

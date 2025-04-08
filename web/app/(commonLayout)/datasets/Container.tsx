@@ -38,7 +38,7 @@ const Container = () => {
   const { showExternalApiPanel, setShowExternalApiPanel } = useExternalApiPanel()
   const [includeAll, { toggle: toggleIncludeAll }] = useBoolean(false)
 
-  document.title = `${t('dataset.knowledge')} - Dify`
+  document.title = `${t('dataset.knowledge')} - Suntray`
 
   const options = useMemo(() => {
     return [

@@ -1,7 +1,7 @@
 const translation = {
   title: 'ツール',
   createCustomTool: 'カスタムツールを作成する',
-  customToolTip: 'Difyカスタムツールの詳細',
+  customToolTip: 'Suntrayカスタムツールの詳細',
   type: {
     all: 'すべて',
     builtIn: 'ツール',
@@ -10,7 +10,7 @@ const translation = {
   },
   contribute: {
     line1: '私は',
-    line2: 'Difyへのツールの貢献に興味があります。',
+    line2: 'Suntrayへのツールの貢献に興味があります。',
     viewGuide: 'ガイドを見る',
   },
   author: '著者：',
