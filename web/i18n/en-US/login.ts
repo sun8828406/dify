@@ -104,6 +104,12 @@ const translation = {
   licenseLostTip: 'Failed to connect Suntray license server. Please contact your administrator to continue using Suntray.',
   licenseInactive: 'License Inactive',
   licenseInactiveTip: 'The Suntray Enterprise license for your workspace is inactive. Please contact your administrator to continue using Suntray.',
+  webapp: {
+    noLoginMethod: 'Authentication method not configured for web app',
+    noLoginMethodTip: 'Please contact the system admin to add an authentication method.',
+    disabled: 'Webapp authentication is disabled. Please contact the system admin to enable it. You can try to use the app directly.',
+  },
+
 }
 
 export default translation

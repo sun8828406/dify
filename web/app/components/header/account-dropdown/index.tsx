@@ -2,7 +2,6 @@
 import { useTranslation } from 'react-i18next'
 import { Fragment, useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { useContext, useContextSelector } from 'use-context-selector'
 import {
   RiAccountCircleLine,
   RiArrowRightUpLine,
@@ -10,6 +9,9 @@ import {
   RiGraduationCapFill,
   RiLogoutBoxRLine,
   RiSettings3Line,
+  RiStarLine,
+  RiTShirt2Line,
+
 } from '@remixicon/react'
 import Link from 'next/link'
 import { Menu, MenuButton, MenuItem, MenuItems, Transition } from '@headlessui/react'
@@ -17,15 +19,17 @@ import AccountAbout from '../account-about'
 import Support from './support'
 import Compliance from './compliance'
 import PremiumBadge from '@/app/components/base/premium-badge'
-import I18n from '@/context/i18n'
 import Avatar from '@/app/components/base/avatar'
+import ThemeSwitcher from '@/app/components/base/theme-switcher'
 import { logout } from '@/service/common'
-import AppContext, { useAppContext } from '@/context/app-context'
+import { useAppContext } from '@/context/app-context'
 import { useProviderContext } from '@/context/provider-context'
 import { useModalContext } from '@/context/modal-context'
 import { LanguagesSupported } from '@/i18n/language'
 import { IS_CLOUD_EDITION } from '@/config'
 import cn from '@/utils/classnames'
+import { useGlobalPublicStore } from '@/context/global-public-context'
+import { useDocLink } from '@/context/i18n'
 
 export default function AppSelector() {
   const itemClassName = `
@@ -34,10 +38,10 @@ export default function AppSelector() {
   `
   const router = useRouter()
   const [aboutVisible, setAboutVisible] = useState(false)
-  const systemFeatures = useContextSelector(AppContext, v => v.systemFeatures)
+  const { systemFeatures } = useGlobalPublicStore()
 
-  const { locale } = useContext(I18n)
   const { t } = useTranslation()
+  const docLink = useDocLink()
   const { userProfile, langeniusVersionInfo, isCurrentWorkspaceOwner } = useAppContext()
   const { isEducationAccount } = useProviderContext()
   const { setShowAccountSettingModal } = useModalContext()
@@ -76,8 +80,8 @@ export default function AppSelector() {
                 <MenuItems
                   className="
                     absolute right-0 mt-1.5 w-60 max-w-80
-                    origin-top-right divide-y divide-divider-subtle rounded-xl bg-components-panel-bg-blur
-                    shadow-lg focus:outline-none
+                    origin-top-right divide-y divide-divider-subtle rounded-xl bg-components-panel-bg-blur shadow-lg
+                    backdrop-blur-sm focus:outline-none
                   "
                 >
                   <MenuItem disabled>

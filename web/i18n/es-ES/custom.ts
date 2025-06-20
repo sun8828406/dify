@@ -3,10 +3,13 @@ const translation = {
   upgradeTip: {
     prefix: 'Actualiza tu plan para',
     suffix: 'personalizar tu marca.',
+    des: 'Actualiza tu plan para personalizar tu marca',
+    title: 'Actualiza tu plan',
   },
   webapp: {
     title: 'Personalizar marca de WebApp',
     removeBrand: 'Eliminar Powered by Suntray',
+
     changeLogo: 'Cambiar Imagen de Marca Powered by',
     changeLogoTip: 'Formato SVG o PNG con un tamaño mínimo de 40x40px',
   },

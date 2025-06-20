@@ -4,7 +4,7 @@ import time
 from functools import wraps
 
 from flask import abort, request
-from flask_login import current_user  # type: ignore
+from flask_login import current_user
 
 from configs import dify_config
 from controllers.console.workspace.error import AccountNotInitializedError
@@ -37,6 +37,17 @@ def only_edition_cloud(view):
     @wraps(view)
     def decorated(*args, **kwargs):
         if dify_config.EDITION != "CLOUD":
+            abort(404)
+
+        return view(*args, **kwargs)
+
+    return decorated
+
+
+def only_edition_enterprise(view):
+    @wraps(view)
+    def decorated(*args, **kwargs):
+        if not dify_config.ENTERPRISE_ENABLED:
             abort(404)
 
         return view(*args, **kwargs)

@@ -3,10 +3,12 @@ const translation = {
   upgradeTip: {
     prefix: 'Markanızı özelleştirmek için planınızı yükseltin',
     suffix: '.',
+    des: 'Markanızı özelleştirmek için planınızı yükseltin',
+    title: 'Planınızı yükseltin',
   },
   webapp: {
-    title: 'WebApp markasını özelleştir',
-    removeBrand: 'Powered by Suntray\'i kaldır',
+    title: 'web app markasını özelleştir',
+    removeBrand: 'Powered by Dify\'i kaldır',
     changeLogo: 'Powered by Brand Resmini Değiştir',
     changeLogoTip: 'SVG veya PNG formatında, en az 40x40px boyutunda',
   },

@@ -32,7 +32,7 @@ const translation = {
     },
     uploader: {
       title: 'Naloži datoteko',
-      button: 'Povleci in spusti datoteko ali',
+      button: 'Povleci in spusti datoteke ali mape oz',
       browse: 'Prebrskaj',
       tip: 'Podprti tipi datotek: {{supportTypes}}. Največ {{size}}MB na datoteko.',
       validation: {
@@ -71,7 +71,6 @@ const translation = {
       run: 'Zaženi',
       firecrawlTitle: 'Izvleci spletno vsebino z 🔥Firecrawl',
       firecrawlDoc: 'Firecrawl dokumentacija',
-      firecrawlDocLink: 'https://docs.dify.ai/guides/knowledge-base/sync-from-website',
       jinaReaderTitle: 'Pretvori celotno stran v Markdown',
       jinaReaderDoc: 'Več o Jina Reader',
       jinaReaderDocLink: 'https://jina.ai/reader',
@@ -92,6 +91,13 @@ const translation = {
       scrapTimeInfo: 'Skupaj preiskanih {{total}} strani v {{time}}s',
       preview: 'Predogled',
       maxDepthTooltip: 'Največja globina iskanja glede na vneseni URL. Globina 0 bo iskala le stran z vnesenim URL-jem, globina 1 bo iskala URL in vse za tem, dodano z enim /, in tako naprej.',
+      waterCrawlNotConfiguredDescription: 'Konfigurirajte Watercrawl z API ključem, da ga uporabite.',
+      configureWatercrawl: 'Konfiguriraj Watercrawl',
+      waterCrawlNotConfigured: 'Watercrawl ni konfiguriran',
+      watercrawlDoc: 'Watercrawl dokumentacija',
+      configureJinaReader: 'Konfigurirajte Jina Reader',
+      configureFirecrawl: 'Konfigurirajte Firecrawl',
+      watercrawlTitle: 'Izvleci vsebino z interneta z Watercrawl',
     },
     cancel: 'Odpovedati',
   },
@@ -199,6 +205,11 @@ const translation = {
     learnMore: 'Izvedi več',
     title: 'Vzpostavite povezavo z drugimi viri podatkov?',
     description: 'Trenutno ima baza znanja Suntray le omejene vire podatkov. Prispevanje vira podatkov v bazo znanja Suntray je fantastičen način za izboljšanje prilagodljivosti in moči platforme za vse uporabnike. Naš vodnik za prispevke olajša začetek. Če želite izvedeti več, kliknite spodnjo povezavo.',
+  },
+  watercrawl: {
+    configWatercrawl: 'Konfiguriraj Watercrawl',
+    getApiKeyLinkText: 'Pridobite svoj API ključ iz watercrawl.dev',
+    apiKeyPlaceholder: 'API ključ iz watercrawl.dev',
   },
 }
 

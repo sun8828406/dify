@@ -2,8 +2,10 @@ const translation = {
   toVerified: 'Get Education Verified',
   toVerifiedTip: {
     front: 'You are now eligible for Education Verified status. Please enter your education information below to complete the process and receive an',
+
     coupon: 'exclusive 50% coupon',
     end: 'for the Suntray Professional Plan.',
+
   },
   currentSigned: 'CURRENTLY SIGNED IN AS',
   form: {
@@ -24,7 +26,7 @@ const translation = {
       desc: {
         front: 'Your information and use of Education Verified status are subject to our',
         and: 'and',
-        end: '. By submitting：',
+        end: '. By submitting:',
         termsOfService: 'Terms of Service',
         privacyPolicy: 'Privacy Policy',
       },
@@ -41,6 +43,7 @@ const translation = {
   successContent: 'We have issued a 50% discount coupon for the Suntray Professional plan to your account. The coupon is valid for one year, please use it within the validity period.',
   rejectTitle: 'Your Suntray Educational Verification Has Been Rejected',
   rejectContent: 'Unfortunately, you are not eligible for Education Verified status and therefore cannot receive the exclusive 50% coupon for the Suntray Professional Plan if you use this email address.',
+
   emailLabel: 'Your current email',
 }
 

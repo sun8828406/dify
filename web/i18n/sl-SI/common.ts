@@ -54,6 +54,10 @@ const translation = {
     viewDetails: 'Poglej podrobnosti',
     copied: 'Kopirati',
     in: 'v',
+    downloadFailed: 'Prenos ni uspel. Prosim, poskusite znova pozneje.',
+    more: 'Več',
+    downloadSuccess: 'Prenos končan.',
+    format: 'Format',
   },
   errorMsg: {
     fieldRequired: '{{field}} je obvezno',
@@ -145,6 +149,8 @@ const translation = {
     newDataset: 'Ustvari znanje',
     tools: 'Orodja',
     exploreMarketplace: 'Raziščite Marketplace',
+    appDetail: 'Podrobnosti o aplikaciji',
+    account: 'Račun',
   },
   userProfile: {
     settings: 'Nastavitve',
@@ -157,6 +163,9 @@ const translation = {
     community: 'Skupnost',
     about: 'O nas',
     logout: 'Odjava',
+    support: 'Podpora',
+    github: 'GitHub',
+    compliance: 'Skladnost',
   },
   settings: {
     accountGroup: 'SPLOŠNO',
@@ -175,7 +184,7 @@ const translation = {
   account: {
     account: 'Račun',
     myAccount: 'Moj račun',
-    studio: 'Suntray Studio',
+    studio: 'Dify Studio',
     avatar: 'Avatar',
     name: 'Ime',
     email: 'E-pošta',
@@ -187,8 +196,8 @@ const translation = {
     newPassword: 'Novo geslo',
     confirmPassword: 'Potrdi geslo',
     notEqual: 'Gesli se ne ujemata.',
-    langGeniusAccount: 'Suntray račun',
-    langGeniusAccountTip: 'Vaš Suntray račun in povezani uporabniški podatki.',
+    langGeniusAccount: 'Dify račun',
+    langGeniusAccountTip: 'Vaš Dify račun in povezani uporabniški podatki.',
     editName: 'Uredi ime',
     showAppLength: 'Prikaz {{length}} aplikacij',
     delete: 'Izbriši račun',
@@ -206,6 +215,9 @@ const translation = {
     deleteSuccessTip: 'Vaš račun potrebuje čas, da dokonča brisanje. Ko bo vse končano, vam bomo poslali e-pošto.',
     feedbackTitle: 'Povratne informacije',
     deleteLabel: 'Za potrditev spodaj vnesite svoj e-poštni naslov',
+    workspaceName: 'Ime delovnega prostora',
+    workspaceIcon: 'Ikona delovnega prostora',
+    editWorkspaceInfo: 'Uredi informacije o delovnem prostoru',
   },
   members: {
     team: 'Ekipa',
@@ -234,7 +246,7 @@ const translation = {
     sendInvite: 'Pošlji povabilo',
     invitedAsRole: 'Povabljen kot uporabnik {{role}}',
     invitationSent: 'Povabilo poslano',
-    invitationSentTip: 'Povabilo poslano, in po prijavi v Suntray bodo imeli dostop do vaših podatkov ekipe.',
+    invitationSentTip: 'Povabilo poslano, in po prijavi v Dify bodo imeli dostop do vaših podatkov ekipe.',
     invitationLink: 'Povezava za povabilo',
     failedInvitationEmails: 'Spodnji uporabniki niso bili uspešno povabljeni',
     ok: 'V redu',
@@ -283,7 +295,7 @@ const translation = {
       openaiHosted: 'Gostovani OpenAI',
       onTrial: 'NA PREIZKUSU',
       exhausted: 'KVOTA PORABLJENA',
-      desc: 'Gostitvena storitev OpenAI, ki jo ponuja Suntray, vam omogoča uporabo modelov, kot je GPT-3.5. Preden porabite kvoto za preizkus, morate nastaviti druge ponudnike modelov.',
+      desc: 'Gostitvena storitev OpenAI, ki jo ponuja Dify, vam omogoča uporabo modelov, kot je GPT-3.5. Preden porabite kvoto za preizkus, morate nastaviti druge ponudnike modelov.',
       callTimes: 'Časi klicev',
       usedUp: 'Kvota za preizkus porabljena. Dodajte svojega ponudnika modelov.',
       useYourModel: 'Trenutno uporabljate svojega ponudnika modelov.',
@@ -450,9 +462,8 @@ const translation = {
       },
     },
     apiBasedExtension: {
-      title: 'Razširitve API omogočajo centralizirano upravljanje API, kar poenostavi konfiguracijo za enostavno uporabo v aplikacijah Suntray.',
+      title: 'Razširitve API omogočajo centralizirano upravljanje API, kar poenostavi konfiguracijo za enostavno uporabo v aplikacijah Dify.',
       link: 'Naučite se, kako razviti svojo API razširitev.',
-      linkUrl: 'https://docs.dify.ai/features/extension/api_based_extension',
       add: 'Dodaj API razširitev',
       selector: {
         title: 'API razširitev',
@@ -481,8 +492,8 @@ const translation = {
     about: {
       changeLog: 'Dnevnik sprememb',
       updateNow: 'Posodobi zdaj',
-      nowAvailable: 'Suntray {{version}} je zdaj na voljo.',
-      latestAvailable: 'Suntray {{version}} je najnovejša različica na voljo.',
+      nowAvailable: 'Dify {{version}} je zdaj na voljo.',
+      latestAvailable: 'Dify {{version}} je najnovejša različica na voljo.',
     },
     appMenus: {
       overview: 'Nadzor',
@@ -680,14 +691,13 @@ const translation = {
     },
     type: 'Vrsta',
     link: 'Preberite, kako razvijete lastno razširitev API-ja.',
-    title: 'Razširitve API zagotavljajo centralizirano upravljanje API, kar poenostavlja konfiguracijo za enostavno uporabo v aplikacijah Suntray.',
-    linkUrl: 'https://docs.dify.ai/features/extension/api_based_extension',
+    title: 'Razširitve API zagotavljajo centralizirano upravljanje API, kar poenostavlja konfiguracijo za enostavno uporabo v aplikacijah Dify.',
     add: 'Dodajanje razširitve API-ja',
   },
   about: {
     updateNow: 'Posodobi zdaj',
-    nowAvailable: 'Suntray {{version}} je zdaj na voljo.',
-    latestAvailable: 'Suntray {{version}} je najnovejša različica, ki je na voljo.',
+    nowAvailable: 'Dify {{version}} je zdaj na voljo.',
+    latestAvailable: 'Dify {{version}} je najnovejša različica, ki je na voljo.',
     changeLog: 'Dnevnik sprememb',
   },
   appMenus: {
@@ -746,6 +756,7 @@ const translation = {
     conversationNamePlaceholder: 'Prosimo, vnesite ime pogovora',
     thinking: 'Razmišljanje...',
     thought: 'Misel',
+    resend: 'Ponovno pošlji',
   },
   promptEditor: {
     context: {
@@ -832,10 +843,31 @@ const translation = {
   license: {
     expiring_plural: 'Poteče v {{count}} dneh',
     expiring: 'Poteče v enem dnevu',
+    unlimited: 'Brez omejitev',
   },
   pagination: {
     perPage: 'Elementi na stran',
   },
+  theme: {
+    theme: 'Tema',
+    light: 'svetloba',
+    auto: 'sistem',
+    dark: 'temno',
+  },
+  compliance: {
+    sandboxUpgradeTooltip: 'Na voljo je le z načrtom Professional ali Team.',
+    gdpr: 'GDPR DPA',
+    soc2Type2: 'Poročilo SOC 2 Tip II',
+    professionalUpgradeTooltip: 'Na voljo je le s Team načrtom ali višjim.',
+    iso27001: 'Certifikacija ISO 27001:2022',
+    soc2Type1: 'Poročilo SOC 2 Tip I',
+  },
+  imageInput: {
+    supportedFormats: 'Podpira PNG, JPG, JPEG, WEBP in GIF',
+    browse: 'brskati',
+    dropImageHere: 'Tukaj spustite svojo sliko ali',
+  },
+  you: 'Ti',
 }
 
 export default translation

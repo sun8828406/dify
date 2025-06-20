@@ -1,5 +1,6 @@
 from typing import Any
 
+from core.file import File
 from core.variables import SegmentType
 
 from .enums import Operation
@@ -16,6 +17,15 @@ def is_operation_supported(*, variable_type: SegmentType, operation: Operation):
             return variable_type == SegmentType.NUMBER
         case Operation.APPEND | Operation.EXTEND:
             # Only array variable can be appended or extended
+            return variable_type in {
+                SegmentType.ARRAY_ANY,
+                SegmentType.ARRAY_OBJECT,
+                SegmentType.ARRAY_STRING,
+                SegmentType.ARRAY_NUMBER,
+                SegmentType.ARRAY_FILE,
+            }
+        case Operation.REMOVE_FIRST | Operation.REMOVE_LAST:
+            # Only array variable can have elements removed
             return variable_type in {
                 SegmentType.ARRAY_ANY,
                 SegmentType.ARRAY_OBJECT,
@@ -51,7 +61,7 @@ def is_constant_input_supported(*, variable_type: SegmentType, operation: Operat
 
 
 def is_input_value_valid(*, variable_type: SegmentType, operation: Operation, value: Any):
-    if operation == Operation.CLEAR:
+    if operation in {Operation.CLEAR, Operation.REMOVE_FIRST, Operation.REMOVE_LAST}:
         return True
     match variable_type:
         case SegmentType.STRING:
@@ -76,6 +86,8 @@ def is_input_value_valid(*, variable_type: SegmentType, operation: Operation, va
             return isinstance(value, int | float)
         case SegmentType.ARRAY_OBJECT if operation == Operation.APPEND:
             return isinstance(value, dict)
+        case SegmentType.ARRAY_FILE if operation == Operation.APPEND:
+            return isinstance(value, File)
 
         # Array & Extend / Overwrite
         case SegmentType.ARRAY_ANY if operation in {Operation.EXTEND, Operation.OVER_WRITE}:
@@ -86,6 +98,8 @@ def is_input_value_valid(*, variable_type: SegmentType, operation: Operation, va
             return isinstance(value, list) and all(isinstance(item, int | float) for item in value)
         case SegmentType.ARRAY_OBJECT if operation in {Operation.EXTEND, Operation.OVER_WRITE}:
             return isinstance(value, list) and all(isinstance(item, dict) for item in value)
+        case SegmentType.ARRAY_FILE if operation in {Operation.EXTEND, Operation.OVER_WRITE}:
+            return isinstance(value, list) and all(isinstance(item, File) for item in value)
 
         case _:
             return False

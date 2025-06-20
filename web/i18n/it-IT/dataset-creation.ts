@@ -27,7 +27,7 @@ const translation = {
     },
     uploader: {
       title: 'Carica file',
-      button: 'Trascina e rilascia il file, o',
+      button: 'Trascina e rilascia file o cartelle, oppure',
       browse: 'Sfoglia',
       tip: 'Supporta {{supportTypes}}. Max {{size}}MB ciascuno.',
       validation: {
@@ -66,8 +66,6 @@ const translation = {
       run: 'Esegui',
       firecrawlTitle: 'Estrai contenuti web con 🔥Firecrawl',
       firecrawlDoc: 'Documenti Firecrawl',
-      firecrawlDocLink:
-        'https://docs.dify.ai/guides/knowledge-base/sync_from_website',
       options: 'Opzioni',
       crawlSubPage: 'Crawl sotto-pagine',
       limit: 'Limite',
@@ -94,6 +92,13 @@ const translation = {
       jinaReaderNotConfiguredDescription: 'Configura Jina Reader inserendo la tua chiave API gratuita per l\'accesso.',
       useSitemap: 'Usa la mappa del sito',
       chooseProvider: 'Seleziona un fornitore',
+      watercrawlDoc: 'Documentazione di Watercrawl',
+      waterCrawlNotConfiguredDescription: 'Configura Watercrawl con la chiave API per utilizzarlo.',
+      configureFirecrawl: 'Configura Firecrawl',
+      watercrawlTitle: 'Estrai contenuti web con Watercrawl',
+      configureJinaReader: 'Configura Jina Reader',
+      configureWatercrawl: 'Configura Watercrawl',
+      waterCrawlNotConfigured: 'Watercrawl non è configurato',
     },
     cancel: 'Annulla',
   },
@@ -222,6 +227,11 @@ const translation = {
     learnMore: 'Ulteriori informazioni',
     title: 'Connettersi ad altre origini dati?',
     description: 'Attualmente, la knowledge base di Suntray ha solo fonti di dati limitate. Contribuire con una fonte di dati alla knowledge base di Suntray è un modo fantastico per migliorare la flessibilità e la potenza della piattaforma per tutti gli utenti. La nostra guida ai contributi ti aiuta a iniziare. Clicca sul link sottostante per saperne di più.',
+  },
+  watercrawl: {
+    getApiKeyLinkText: 'Ottieni la tua chiave API da watercrawl.dev',
+    apiKeyPlaceholder: 'Chiave API da watercrawl.dev',
+    configWatercrawl: 'Configura Watercrawl',
   },
 }
 
