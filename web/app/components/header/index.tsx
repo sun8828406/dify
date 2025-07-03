@@ -9,8 +9,7 @@ import PluginsNav from './plugins-nav'
 import ExploreNav from './explore-nav'
 import ToolsNav from './tools-nav'
 import { useAppContext } from '@/context/app-context'
-import LogoSite from '@/app/components/base/logo/logo-site'
-
+import { WorkspaceProvider } from '@/context/workspace-context'
 import DifyLogo from '@/app/components/base/logo/dify-logo'
 import WorkplaceSelector from '@/app/components/header/account-dropdown/workplace-selector'
 
@@ -42,8 +41,6 @@ const Header = () => {
     else
       setShowAccountSettingModal({ payload: 'billing' })
   }, [isFreePlan, setShowAccountSettingModal, setShowPricingModal])
-
-
   if (isMobile) {
     return (
       <div className=''>
