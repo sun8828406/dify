@@ -177,7 +177,7 @@ const translation = {
     sortBy: 'Sortieren nach',
     discover: 'Entdecken',
     noPluginFound: 'Kein Plugin gefunden',
-    difyMarketplace: 'Dify Marktplatz',
+    difyMarketplace: 'Suntray Marktplatz',
     moreFrom: 'Mehr aus dem Marketplace',
     pluginsResult: '{{num}} Ergebnisse',
     empower: 'Unterstützen Sie Ihre KI-Entwicklung',

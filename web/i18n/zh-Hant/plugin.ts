@@ -180,7 +180,7 @@ const translation = {
     and: '和',
     sortBy: '排序方式',
     viewMore: '查看更多',
-    difyMarketplace: 'Dify 市場',
+    difyMarketplace: 'Suntray 市場',
     pluginsResult: '{{num}} 個結果',
     verifiedTip: '由 Dify 驗證',
     partnerTip: '由 Dify 合作夥伴驗證',

@@ -9,8 +9,18 @@ import useDocumentTitle from '@/hooks/use-document-title'
 const ToolsList: FC = () => {
   const router = useRouter()
   const { isCurrentWorkspaceDatasetOperator } = useAppContext()
+
+
+  // useEffect(() => {
+  //   if (typeof window !== 'undefined')
+  //     document.title = `${t('tools.title')} - Suntray`
+  //   if (isCurrentWorkspaceDatasetOperator)
+  //     return router.replace('/datasets')
+  // }, [isCurrentWorkspaceDatasetOperator, router, t])
+
   const { t } = useTranslation()
   useDocumentTitle(t('common.menus.tools'))
+
 
   useEffect(() => {
     if (isCurrentWorkspaceDatasetOperator)

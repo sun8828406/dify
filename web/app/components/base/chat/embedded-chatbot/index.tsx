@@ -51,6 +51,10 @@ const Chatbot = () => {
 
   useEffect(() => {
     themeBuilder?.buildTheme(site?.chat_color_theme, site?.chat_color_theme_inverted)
+
+    if (site)
+      document.title = `${site.title} - Powered by Suntray`
+
   }, [site, customConfig, themeBuilder])
 
   useDocumentTitle(site?.title || 'Chat')

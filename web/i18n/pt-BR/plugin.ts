@@ -178,7 +178,7 @@ const translation = {
     and: 'e',
     pluginsResult: '{{num}} resultados',
     empower: 'Capacite seu desenvolvimento de IA',
-    difyMarketplace: 'Mercado Dify',
+    difyMarketplace: 'Mercado Suntray',
     moreFrom: 'Mais do Marketplace',
     noPluginFound: 'Nenhum plugin encontrado',
     discover: 'Descobrir',

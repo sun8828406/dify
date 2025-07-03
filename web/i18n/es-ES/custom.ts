@@ -7,8 +7,9 @@ const translation = {
     title: 'Actualiza tu plan',
   },
   webapp: {
-    title: 'Personalizar marca de web app',
-    removeBrand: 'Eliminar Powered by Dify',
+    title: 'Personalizar marca de WebApp',
+    removeBrand: 'Eliminar Powered by Suntray',
+
     changeLogo: 'Cambiar Imagen de Marca Powered by',
     changeLogoTip: 'Formato SVG o PNG con un tamaño mínimo de 40x40px',
   },

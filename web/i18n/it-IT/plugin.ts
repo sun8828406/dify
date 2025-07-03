@@ -174,7 +174,7 @@ const translation = {
       mostPopular: 'I più popolari',
     },
     moreFrom: 'Altro da Marketplace',
-    difyMarketplace: 'Mercato Dify',
+    difyMarketplace: 'Mercato Suntray',
     discover: 'Scoprire',
     pluginsResult: '{{num}} risultati',
     noPluginFound: 'Nessun plug-in trovato',

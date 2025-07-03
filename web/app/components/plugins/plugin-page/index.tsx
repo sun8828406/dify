@@ -59,7 +59,10 @@ const PluginPage = ({
   const { locale } = useContext(I18n)
   const searchParams = useSearchParams()
   const { replace } = useRouter()
-  useDocumentTitle(t('plugin.metadata.title'))
+
+  document.title = `${t('plugin.metadata.title')} - Suntray`
+
+  useDocumentTitle(t('plugin.metadata.title - Suntray' ))
 
   // just support install one package now
   const packageId = useMemo(() => {

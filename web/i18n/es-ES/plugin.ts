@@ -181,9 +181,10 @@ const translation = {
     pluginsResult: '{{num}} resultados',
     discover: 'Descubrir',
     and: 'y',
-    difyMarketplace: 'Mercado de Dify',
+    difyMarketplace: 'Mercado de Suntray',
     verifiedTip: 'Verificado por Dify',
     partnerTip: 'Verificado por un socio de Dify',
+
   },
   task: {
     installing: 'Instalando plugins {{installingLength}}, 0 hecho.',

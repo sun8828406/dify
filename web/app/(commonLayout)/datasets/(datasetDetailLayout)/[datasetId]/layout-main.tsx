@@ -154,7 +154,14 @@ const DatasetDetailLayout: FC<IAppDetailLayoutProps> = (props) => {
     return baseNavigation
   }, [datasetRes?.provider, datasetId, t])
 
+
+  // useEffect(() => {
+  //   if (datasetRes)
+  //     document.title = `${datasetRes.name || 'Dataset'} - Suntray`
+  // }, [datasetRes])
+
   useDocumentTitle(datasetRes?.name || t('common.menus.datasets'))
+
 
   const setAppSiderbarExpand = useStore(state => state.setAppSiderbarExpand)
 

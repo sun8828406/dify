@@ -8,8 +8,14 @@ import { TanstackQueryIniter } from '@/context/query-client'
 import { ThemeProvider } from 'next-themes'
 import './styles/globals.css'
 import './styles/markdown.scss'
+
+export const metadata = {
+  title: 'Suntray',
+}
+
 import GlobalPublicStoreProvider from '@/context/global-public-context'
 import { DatasetAttr } from '@/types/feature'
+
 
 export const viewport: Viewport = {
   width: 'device-width',
